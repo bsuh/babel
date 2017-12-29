@@ -3,11 +3,12 @@ function agf() {
 }
 
 function _agf() {
-  _agf = babelHelpers.wrapAsyncGenerator(function* () {
+  var _agf = babelHelpers.wrapAsyncGenerator(function* () {
     this;
     yield babelHelpers.awaitAsyncGenerator(1);
     yield 2;
     return 3;
   });
+
   return _agf.apply(this, arguments);
 }

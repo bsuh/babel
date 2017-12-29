@@ -3,7 +3,7 @@ function f() {
 }
 
 function _f() {
-  _f = babelHelpers.asyncToGenerator(function* () {
+  var _f = babelHelpers.asyncToGenerator(function* () {
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
 
@@ -32,5 +32,6 @@ function _f() {
       }
     }
   });
+
   return _f.apply(this, arguments);
 }

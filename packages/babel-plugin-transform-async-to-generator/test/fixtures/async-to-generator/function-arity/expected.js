@@ -3,7 +3,8 @@ function one(_x) {
 }
 
 function _one() {
-  _one = babelHelpers.asyncToGenerator(function* (a, b = 1) {});
+  var _one = babelHelpers.asyncToGenerator(function* (a, b = 1) {});
+
   return _one.apply(this, arguments);
 }
 
@@ -12,7 +13,8 @@ function two(_x2, _x3) {
 }
 
 function _two() {
-  _two = babelHelpers.asyncToGenerator(function* (a, b, ...c) {});
+  var _two = babelHelpers.asyncToGenerator(function* (a, b, ...c) {});
+
   return _two.apply(this, arguments);
 }
 
@@ -21,7 +23,8 @@ function three(_x4) {
 }
 
 function _three() {
-  _three = babelHelpers.asyncToGenerator(function* (a, b = 1, c, d = 3) {});
+  var _three = babelHelpers.asyncToGenerator(function* (a, b = 1, c, d = 3) {});
+
   return _three.apply(this, arguments);
 }
 
@@ -30,7 +33,8 @@ function four(_x5) {
 }
 
 function _four() {
-  _four = babelHelpers.asyncToGenerator(function* (a, b = 1, c, ...d) {});
+  var _four = babelHelpers.asyncToGenerator(function* (a, b = 1, c, ...d) {});
+
   return _four.apply(this, arguments);
 }
 
@@ -39,9 +43,10 @@ function five(_x6, _x7) {
 }
 
 function _five() {
-  _five = babelHelpers.asyncToGenerator(function* (a, {
+  var _five = babelHelpers.asyncToGenerator(function* (a, {
     b
   }) {});
+
   return _five.apply(this, arguments);
 }
 
@@ -50,8 +55,9 @@ function six(_x8) {
 }
 
 function _six() {
-  _six = babelHelpers.asyncToGenerator(function* (a, {
+  var _six = babelHelpers.asyncToGenerator(function* (a, {
     b
   } = {}) {});
+
   return _six.apply(this, arguments);
 }

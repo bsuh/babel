@@ -21,10 +21,11 @@ function foo() {
 }
 
 function _foo() {
-  _foo = _wrapAsyncGenerator(_skipFirstGeneratorNext(function* () {
+  var _foo = _wrapAsyncGenerator(_skipFirstGeneratorNext(function* () {
     let _functionSent = yield;
 
     _functionSent = yield _awaitAsyncGenerator(_functionSent);
   }));
+
   return _foo.apply(this, arguments);
 }

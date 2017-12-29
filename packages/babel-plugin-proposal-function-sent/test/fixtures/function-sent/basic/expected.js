@@ -5,10 +5,11 @@ function gen() {
 }
 
 function _gen() {
-  _gen = _skipFirstGeneratorNext(function* () {
+  var _gen = _skipFirstGeneratorNext(function* () {
     let _functionSent = yield;
 
     let sent = _functionSent;
   });
+
   return _gen.apply(this, arguments);
 }

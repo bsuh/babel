@@ -5,10 +5,11 @@ export default function () {
 }
 
 function _ref() {
-  _ref = _skipFirstGeneratorNext(function* () {
+  var _ref = _skipFirstGeneratorNext(function* () {
     let _functionSent = yield;
 
     return _functionSent;
   });
+
   return _ref.apply(this, arguments);
 }

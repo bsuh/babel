@@ -3,6 +3,7 @@ function foo(_x) {
 }
 
 function _foo() {
-  _foo = babelHelpers.asyncToGenerator(function* (bar) {});
+  var _foo = babelHelpers.asyncToGenerator(function* (bar) {});
+
   return _foo.apply(this, arguments);
 }

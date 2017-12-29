@@ -7,8 +7,9 @@ function foo() {
 }
 
 function _foo() {
-  _foo = _asyncToGenerator(function* () {
+  var _foo = _asyncToGenerator(function* () {
     yield _Promise.resolve();
   });
+
   return _foo.apply(this, arguments);
 }

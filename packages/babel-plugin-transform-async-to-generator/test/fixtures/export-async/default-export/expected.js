@@ -10,6 +10,7 @@ function myFunc() {
 }
 
 function _myFunc() {
-  _myFunc = babelHelpers.asyncToGenerator(function* () {});
+  var _myFunc = babelHelpers.asyncToGenerator(function* () {});
+
   return _myFunc.apply(this, arguments);
 }

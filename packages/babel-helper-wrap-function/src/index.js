@@ -15,7 +15,7 @@ const buildExpressionWrapper = template.expression(`
 const buildDeclarationWrapper = template(`
   function NAME(PARAMS) { return REF.apply(this, arguments); }
   function REF() {
-    REF = FUNCTION;
+    var REF = FUNCTION;
     return REF.apply(this, arguments);
   }
 `);

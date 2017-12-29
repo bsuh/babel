@@ -59,7 +59,7 @@ function foo() {
 }
 
 function _foo() {
-  _foo = _asyncToGenerator(
+  var _foo = _asyncToGenerator(
   /*#__PURE__*/
   regeneratorRuntime.mark(function _callee3() {
     var bar, _bar2;
@@ -69,7 +69,7 @@ function _foo() {
         switch (_context3.prev = _context3.next) {
           case 0:
             _bar2 = function _bar2() {
-              _bar2 = _asyncToGenerator(
+              var _bar2 = _asyncToGenerator(
               /*#__PURE__*/
               regeneratorRuntime.mark(function _callee2() {
                 var baz;
@@ -86,6 +86,7 @@ function _foo() {
                   }
                 }, _callee2, this);
               }));
+
               return _bar2.apply(this, arguments);
             };
 
@@ -100,5 +101,6 @@ function _foo() {
       }
     }, _callee3, this);
   }));
+
   return _foo.apply(this, arguments);
 }

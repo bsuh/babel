@@ -11,11 +11,12 @@ function foo(_x) {
 }
 
 function _foo() {
-  _foo = _asyncToGenerator(function* (_ref) {
+  var _foo = _asyncToGenerator(function* (_ref) {
     let a = _ref.a,
         _ref$b = _ref.b,
         b = _ref$b === void 0 ? mandatory("b") : _ref$b;
     return Promise.resolve(b);
   });
+
   return _foo.apply(this, arguments);
 }

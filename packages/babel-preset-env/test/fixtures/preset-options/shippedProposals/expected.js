@@ -38,7 +38,7 @@ function agf() {
 }
 
 function _agf() {
-  _agf = _wrapAsyncGenerator(
+  var _agf = _wrapAsyncGenerator(
   /*#__PURE__*/
   regeneratorRuntime.mark(function _callee() {
     return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -59,5 +59,6 @@ function _agf() {
       }
     }, _callee, this);
   }));
+
   return _agf.apply(this, arguments);
 }

@@ -7,7 +7,7 @@ function foo() {
 }
 
 function _foo() {
-  _foo = _asyncToGenerator(function* () {
+  var _foo = _asyncToGenerator(function* () {
     let Promise;
     yield bar();
 
@@ -16,11 +16,13 @@ function _foo() {
     }
 
     function _bar() {
-      _bar = _asyncToGenerator(function* () {
+      var _bar = _asyncToGenerator(function* () {
         return Promise.resolve();
       });
+
       return _bar.apply(this, arguments);
     }
   });
+
   return _foo.apply(this, arguments);
 }

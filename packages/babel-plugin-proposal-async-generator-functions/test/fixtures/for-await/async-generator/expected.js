@@ -3,7 +3,7 @@ function g() {
 }
 
 function _g() {
-  _g = babelHelpers.wrapAsyncGenerator(function* () {
+  var _g = babelHelpers.wrapAsyncGenerator(function* () {
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
 
@@ -29,5 +29,6 @@ function _g() {
       }
     }
   });
+
   return _g.apply(this, arguments);
 }

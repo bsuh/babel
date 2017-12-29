@@ -8,7 +8,7 @@ function a() {
 }
 
 function _a() {
-  _a = _asyncToGenerator(
+  var _a = _asyncToGenerator(
   /*#__PURE__*/
   regeneratorRuntime.mark(function _callee() {
     return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -21,5 +21,6 @@ function _a() {
       }
     }, _callee, this);
   }));
+
   return _a.apply(this, arguments);
 }

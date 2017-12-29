@@ -5,8 +5,9 @@ function foo() {
 }
 
 function _foo() {
-  _foo = _coroutine(function* () {
+  var _foo = _coroutine(function* () {
     var wat = yield bar();
   });
+
   return _foo.apply(this, arguments);
 }

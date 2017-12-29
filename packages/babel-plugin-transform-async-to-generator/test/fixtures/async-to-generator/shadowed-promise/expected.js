@@ -7,10 +7,11 @@ function foo() {
 }
 
 function _foo() {
-  _foo = _asyncToGenerator(function* () {
+  var _foo = _asyncToGenerator(function* () {
     yield new _Promise(resolve => {
       resolve();
     });
   });
+
   return _foo.apply(this, arguments);
 }
